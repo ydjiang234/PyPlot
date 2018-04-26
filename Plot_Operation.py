@@ -31,7 +31,7 @@ class Plot_Operator:
             ax.set_xticklabels(labels)
         elif axis == 'y':
             labels = ax.get_yticks().tolist()
-            labels = [str(item)[:-1*skip] + '%' for item in labels]
+            labels = [str(item)[:-1*skip] + label for item in labels]
             ax.set_yticklabels(labels)
 
     def analyse_lim_ticks(self, max_value, num, intervals):
