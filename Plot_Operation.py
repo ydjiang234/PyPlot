@@ -69,6 +69,5 @@ class Plot_Operator:
             ax.set_ylim(range1)
             self.set_y_major_tick(ax, cur_interval)
 
-
     def tight(self, fig):
         fig.tight_layout()
